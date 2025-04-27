@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dataIndex battleScribeVersion="2.03" name="Horus Heresy (2022) - Panoptica" indexUrl="https://github.com/virtualFear/HH-Panoptica/" xmlns="http://www.battlescribe.net/schema/dataIndexSchema">
+  <dataIndexEntries>
+    <dataIndexEntry filePath="2022 - Horus Heresy.gstz" dataType="gamesystem" dataId="28d4-bd2e-4858-ece6" dataName="Horus Heresy (2022) - Panoptica" dataBattleScribeVersion="2.03" dataRevision="129"/>
+    <dataIndexEntry filePath="2022 - LA - Raven Guard.catz" dataType="catalogue" dataId="d21e-9c80-a7f8-728c" dataName="LA - XIX: Raven Guard" dataBattleScribeVersion="2.03" dataRevision="38"/>
+    <dataIndexEntry filePath="2022 - LI - Custodes.catz" dataType="catalogue" dataId="2f2b-1f31-c455-1701" dataName="LI - Custodes" dataBattleScribeVersion="2.03" dataRevision="27"/>
+    <dataIndexEntry filePath="2022 - Titan Legions.catz" dataType="catalogue" dataId="c01b-0224-f806-0d23" dataName="Titan Legions" dataBattleScribeVersion="2.03" dataRevision="12"/>
+    <dataIndexEntry filePath="2022 - LA - White Scars.catz" dataType="catalogue" dataId="caa9-c50e-8eed-2259" dataName="LA -   V: White Scars" dataBattleScribeVersion="2.03" dataRevision="47"/>
+    <dataIndexEntry filePath="2022 - LI - Assassins.catz" dataType="catalogue" dataId="4c88-1a81-7e53-0a67" dataName="LI - Assassins and Agents" dataBattleScribeVersion="2.03" dataRevision="16"/>
+    <dataIndexEntry filePath="2022 - Mechanicum.catz" dataType="catalogue" dataId="c247-da79-1654-d39e" dataName="Mechanicum" dataBattleScribeVersion="2.03" dataRevision="48"/>
+    <dataIndexEntry filePath="2022 - LA - Emperor&apos;s Children.catz" dataType="catalogue" dataId="72ba-61c2-37ad-c785" dataName="LA -   III: Emperor&apos;s Children" dataBattleScribeVersion="2.03" dataRevision="45"/>
+    <dataIndexEntry filePath="2022 - LA - Blood Angels.catz" dataType="catalogue" dataId="cd4d-8765-5387-8409" dataName="LA -  IX: Blood Angels" dataBattleScribeVersion="2.03" dataRevision="51"/>
+    <dataIndexEntry filePath="2022 - LA - Imperial Fists.catz" dataType="catalogue" dataId="8866-00ec-715f-f21a" dataName="LA -   VII: Imperial Fists" dataBattleScribeVersion="2.03" dataRevision="41"/>
+    <dataIndexEntry filePath="2022 - Daemons - Daemons of the Ruinstorm.catz" dataType="catalogue" dataId="ac63-5340-2e9e-1eb6" dataName="Daemons - Daemons of the Ruinstorm" dataBattleScribeVersion="2.03" dataRevision="15"/>
+    <dataIndexEntry filePath="2022 - LA - Sons of Horus.catz" dataType="catalogue" dataId="62c7-42f4-5523-af1b" dataName="LA -  XVI: Sons of Horus" dataBattleScribeVersion="2.03" dataRevision="48"/>
+    <dataIndexEntry filePath="2022 - BG - Blackshields.catz" dataType="catalogue" dataId="cd55-5578-4b1a-67a0" dataName="BG - Blackshields" dataBattleScribeVersion="2.03" dataRevision="8"/>
+    <dataIndexEntry filePath="2022 - LA - Dark Angels.catz" dataType="catalogue" dataId="ee5e-198e-1b19-4b9f" dataName="LA -   I: Dark Angels" dataBattleScribeVersion="2.03" dataRevision="41"/>
+    <dataIndexEntry filePath="2022 - LA - Iron Hands.catz" dataType="catalogue" dataId="b73e-125f-db29-17f2" dataName="LA -  X: Iron Hands" dataBattleScribeVersion="2.03" dataRevision="46"/>
+    <dataIndexEntry filePath="2022 - LA - Thousand Sons.catz" dataType="catalogue" dataId="abac-8dd1-df65-e253" dataName="LA -  XV: Thousand Sons" dataBattleScribeVersion="2.03" dataRevision="41"/>
+    <dataIndexEntry filePath="2022 - LA - Alpha Legion.catz" dataType="catalogue" dataId="9c06-1c61-d01d-8445" dataName="LA - XX: Alpha Legion" dataBattleScribeVersion="2.03" dataRevision="59"/>
+    <dataIndexEntry filePath="2022 - LA - World Eaters.catz" dataType="catalogue" dataId="d901-0eca-48b5-304a" dataName="LA -  XII: World Eaters" dataBattleScribeVersion="2.03" dataRevision="44"/>
+    <dataIndexEntry filePath="Shattered Legions.catz" dataType="catalogue" dataId="67bb-e640-ef0a-0e16" dataName="Shattered Legions" dataBattleScribeVersion="2.03" dataRevision="2"/>
+    <dataIndexEntry filePath="2022 - LA - Salamanders.catz" dataType="catalogue" dataId="3547-84d8-d789-bab7" dataName="LA -  XVIII: Salamanders" dataBattleScribeVersion="2.03" dataRevision="46"/>
+    <dataIndexEntry filePath="2022 - LA - Death Guard.catz" dataType="catalogue" dataId="d228-55e8-b58c-1b77" dataName="LA -  XIV: Death Guard" dataBattleScribeVersion="2.03" dataRevision="40"/>
+    <dataIndexEntry filePath="2022 - LI - Sisters Of Silence.catz" dataType="catalogue" dataId="585a-5ac2-a233-a6a6" dataName="LI - Sisters of Silence" dataBattleScribeVersion="2.03" dataRevision="23"/>
+    <dataIndexEntry filePath="Daemon Library.catz" dataType="catalogue" dataId="31bf-eb23-33a-3d65" dataName="Daemon Library" dataBattleScribeVersion="2.03" dataRevision="7"/>
+    <dataIndexEntry filePath="2022 - LA - Space Wolves.catz" dataType="catalogue" dataId="ca15-13de-89cb-bbb2" dataName="LA -   VI: Space Wolves" dataBattleScribeVersion="2.03" dataRevision="44"/>
+    <dataIndexEntry filePath="2022 - Imperialis Militia.catz" dataType="catalogue" dataId="f84d-94cf-5ce6-b393" dataName="Imperialis Militia" dataBattleScribeVersion="2.03" dataRevision="47"/>
+    <dataIndexEntry filePath="2022 - Questoris Household.catz" dataType="catalogue" dataId="92b4-d476-8b4c-e7ef" dataName="Questoris Household" dataBattleScribeVersion="2.03" dataRevision="10"/>
+    <dataIndexEntry filePath="2022 - LA - Word Bearers.catz" dataType="catalogue" dataId="1df7-bbbc-b70e-6a3f" dataName="LA -  XVII: Word Bearers" dataBattleScribeVersion="2.03" dataRevision="47"/>
+    <dataIndexEntry filePath="2022 - LA - Night Lords.catz" dataType="catalogue" dataId="36dc-14fc-8872-476b" dataName="LA -   VIII: Night Lords" dataBattleScribeVersion="2.03" dataRevision="47"/>
+    <dataIndexEntry filePath="2022 - LA - Ultramarines.catz" dataType="catalogue" dataId="68ae-9855-b56a-95e6" dataName="LA -  XIII: Ultramarines" dataBattleScribeVersion="2.03" dataRevision="45"/>
+    <dataIndexEntry filePath="2022 - Daemons - Bound Daemons.catz" dataType="catalogue" dataId="e545-295b-4cd9-f235" dataName="Daemons - Bound Daemons" dataBattleScribeVersion="2.03" dataRevision="12"/>
+    <dataIndexEntry filePath="2022 - LA - Iron Warriors.catz" dataType="catalogue" dataId="2ee4-57ed-db44-8a63" dataName="LA -   IV: Iron Warriors" dataBattleScribeVersion="2.03" dataRevision="46"/>
+    <dataIndexEntry filePath="2022 - Mech Library.catz" dataType="catalogue" dataId="3129-da35-55e0-642d" dataName="Mech Library" dataBattleScribeVersion="2.03" dataRevision="54"/>
+    <dataIndexEntry filePath="2022 - Legiones Astartes.catz" dataType="catalogue" dataId="6393-649c-7213-a327" dataName="Legions Astartes" dataBattleScribeVersion="2.03" dataRevision="210"/>
+    <dataIndexEntry filePath="2022 - LI - Solar Auxilia.catz" dataType="catalogue" dataId="6af7-3fee-5bc1-7533" dataName="LI - Solar Auxilia" dataBattleScribeVersion="2.03" dataRevision="47"/>
+  </dataIndexEntries>
+</dataIndex>
