@@ -1,56 +1,191 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="92b4-d476-8b4c-e7ef" name="Questoris Household" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="66" type="catalogue">
+<catalogue id="92b4-d476-8b4c-e7ef" name="Questoris Household" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="129" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <comment>Updated Armigers per Liber Ingenium as published on 27/04/2025.</comment>
   <forceEntries>
     <forceEntry id="28d3-4be2-608d-bf8a" name="0. Questoris Household Force Organisation Chart" hidden="false">
+      <constraints>
+        <constraint field="forces" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fed-1e9-64f8-40e3" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="f631-f41f-891c-211e" name="Expanded Army Lists" hidden="false" targetId="e8ed-ca49-ad6d-5688" primary="false"/>
         <categoryLink id="2aac-bb02-6cd3-89e2" name="Allegiance:" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d9e9-a28e-7bbc-d005" type="min"/>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a131-365a-1599-0f96" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d9e9-a28e-7bbc-d005" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a131-365a-1599-0f96" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="59a3-b7f1-f65f-a8fb" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="false">
           <constraints>
-            <constraint field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="27db-7ccb-7025-0cac" type="min"/>
-            <constraint field="selections" scope="force" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a846-3030-a1a3-7334" type="max"/>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="27db-7ccb-7025-0cac" type="min"/>
+            <constraint field="selections" scope="force" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a846-3030-a1a3-7334" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="aa7a-7ef7-f5a1-3663" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="false">
           <modifiers>
             <modifier type="increment" field="66c7-bb9a-6eaa-bc63" value="1">
               <repeats>
-                <repeat field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b5d-fac7-799b-d7e7" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b5d-fac7-799b-d7e7" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8145-1ff0-bff3-0a46" type="min"/>
-            <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="66c7-bb9a-6eaa-bc63" type="max"/>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8145-1ff0-bff3-0a46" type="min"/>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="66c7-bb9a-6eaa-bc63" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Compulsory Troops:" hidden="false" id="ecc2-b9fe-9d19-c5b1" targetId="8f42-a824-fb5f-8fea" primary="false">
+        <categoryLink id="ecc2-b9fe-9d19-c5b1" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="5673-e6c3-1856-0d21" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5673-e6c3-1856-0d21" type="min"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="6fed-1e9-64f8-40e3"/>
-      </constraints>
     </forceEntry>
   </forceEntries>
+  <selectionEntries>
+    <selectionEntry id="a4e7-a3c8-b4d0-0993" name="Questoris Knight Moirax Talon" publicationId="3a8e-e445-ff9e-3b41" page="71" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fe5-0ce2-a84c-b98b" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="03f3-77b3-6885-1b92" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+        <categoryLink id="2f2f-db20-36a8-0359" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="43eb-17e7-b33f-3673" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d4ba-a804-1cd1-9603" name="Knight Moirax" publicationId="3a8e-e445-ff9e-3b41" page="71" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7e4-cfdc-491b-e617" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad30-9537-850b-a41e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="47dc-f6ba-d3e8-a78c" name="Greuso Protocol" publicationId="bde1-6db1-163b-3b76" page="105" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction may be made whenever an enemy unit declares a Charge targeting a friendly unit with the Automata Unit Type or Knight Unit Sub-type which is within 12&quot; of another friendly unit that includes at least one model with the Greuso Protocol special rule and is not itself locked in combat. The unit with the Greuso Protocol special rule may make a Shooting Attack, targeting the unit that triggered this Reaction and following all the usual rules for Shooting Attacks. A unit that makes a Shooting Attack as part of a Greuso Protocol Reaction may not make any attacks indirectly (without line of sight) including weapons with the Barrage special rule or other weapons or special rules that otherwise ignore line of sight, and Vehicles may only fire Defensive Weapons. Template weapons used as part of a Greuso Protocol Reaction use the Wall of Death rule instead of firing normally. The unit targeted by the Greuso Protocol Reaction may not take Cover Saves against Wounds inflicted as part of that Reaction.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="4993-6fd5-07ee-d564" name="Knight Moirax" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Armiger</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">7</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">7</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">6</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="266e-8fbc-f375-4530" name="Greuso Protocol" hidden="false">
+              <description>A unit that includes one or more models with this special rule may make use of the Greuso Protocol Advanced Reaction.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="3276-4980-1177-e857" name="Fleet (X)" hidden="false" targetId="ddc9-0b4b-78da-bbd2" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Fleet (2)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="cc11-ed85-4654-ba6e" name="Night Vision" hidden="false" targetId="683e-b4f2-f032-d31b" type="rule"/>
+            <infoLink id="d179-6bff-20df-63a5" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
+            <infoLink id="62f3-bb06-0f88-98f3" name="Move Through Cover" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule"/>
+            <infoLink id="ecb0-02f9-65fe-c508" name="Armiger and Moirax Talons" hidden="false" targetId="d840-fbd0-352e-b33e" type="rule"/>
+            <infoLink id="e3b1-5d97-9e86-07b4" name="Armiger Unit-Type" hidden="false" targetId="53f7-6b93-cc7a-b976" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="fe35-be25-c91f-f730" name="Armiger Unit Type" hidden="false" targetId="41ff-7fc9-d4a0-da2" primary="false"/>
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="7301-251a-3a65-1c24" name="May exchange its Siege Claw with In-Built Irad-Cleanser for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="9619-5d80-86c5-78d5">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b44-5472-807b-c3bb" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1ff-9eb3-e78a-2aba" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="0c93-9a66-e1a1-acc9" name="Conversion Beam Cannon" hidden="false" collective="false" import="true" targetId="5775-0d94-8e13-8c1f" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="1e31-3a8c-be59-19db" name="Graviton Pulsar" hidden="false" collective="false" import="true" targetId="115a-86e7-896f-b872" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="a817-c6ce-890e-889a" name="Lightning Lock" hidden="false" collective="false" import="true" targetId="dd74-951d-8540-5ea1" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="9619-5d80-86c5-78d5" name="Siege Claw with In-Built Irad-Cleanser" hidden="false" collective="false" import="true" targetId="6a06-cbf5-fbbf-85fe" type="selectionEntry"/>
+                <entryLink id="ca25-8866-fc94-3835" name="Volkite Veuglaire" hidden="false" collective="false" import="true" targetId="0dd0-0edf-9526-cc6b" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="fc15-00ef-bc00-4aab" name="May exchange its Volkite Veuglaire for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="4d7f-649f-8cc3-9db5">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4b9-05ee-8fff-f8a7" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bb8-7440-9e30-496f" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="45ae-4986-abb3-ae12" name="Conversion Beam Cannon" hidden="false" collective="false" import="true" targetId="5775-0d94-8e13-8c1f" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="43a9-f435-af12-b3b6" name="Graviton Pulsar" hidden="false" collective="false" import="true" targetId="115a-86e7-896f-b872" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="b462-3b52-602e-d8c0" name="Lightning Lock" hidden="false" collective="false" import="true" targetId="dd74-951d-8540-5ea1" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="e315-020c-6f53-5989" name="Siege Claw with In-Built Irad-Cleanser" hidden="false" collective="false" import="true" targetId="6a06-cbf5-fbbf-85fe" type="selectionEntry"/>
+                <entryLink id="4d7f-649f-8cc3-9db5" name="Volkite Veuglaire" hidden="false" collective="false" import="true" targetId="0dd0-0edf-9526-cc6b" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="8324-d4dd-7d67-2869" name="Ionic Deflector" hidden="false" collective="false" import="true" targetId="c587-8d02-aaba-ce19" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0d3-e8ee-9f09-3a86" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45f9-77ad-aa2b-0859" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="da94-9ea5-57da-b277" name="Rad Furnace" hidden="false" collective="false" import="true" targetId="18da-a26c-bdd4-8a5f" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee1e-2712-32a0-7600" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee5c-f556-11dc-8121" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="225.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
   <entryLinks>
     <entryLink id="f32d-4f08-ccfa-21bb" name="Divisio Tactica: Questoris Household" hidden="false" collective="false" import="false" targetId="807e-0cf8-7f28-7b6d" type="selectionEntry">
       <modifiers>
         <modifier type="add" field="category" value="7b69-bf2f-4547-e83b">
           <conditions>
-            <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5430-5be1-1613-be44" type="instanceOf"/>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5430-5be1-1613-be44" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a16-b1cb-730d-f4b6" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a16-b1cb-730d-f4b6" type="min"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="af54-5227-93ca-a151" name="Allegiance:" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="true"/>
@@ -60,7 +195,7 @@
       <categoryLinks>
         <categoryLink id="8834-b5ff-be64-696d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="c8a9-bc4a-19a5-7e60" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
-        <categoryLink targetId="8f42-a824-fb5f-8fea" id="2648-2b99-53b1-068a" primary="false" name="Compulsory Troops:"/>
+        <categoryLink id="2648-2b99-53b1-068a" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="d584-89d3-0ba5-7faa" name="Knight Questoris" hidden="false" collective="false" import="true" targetId="3706-a84c-678d-b1c6" type="selectionEntry">
@@ -69,15 +204,15 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d926-652f-8436-30ce" type="greaterThan"/>
-                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58a7-8821-3cd9-c73" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d926-652f-8436-30ce" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58a7-8821-3cd9-c73" type="greaterThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="add" value="5f7-c0fa-4d3-180c" field="category">
+        <modifier type="add" field="category" value="5f7-c0fa-4d3-180c">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="28d3-4be2-608d-bf8a" shared="true" includeChildSelections="true"/>
+            <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28d3-4be2-608d-bf8a" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -91,7 +226,7 @@
       <categoryLinks>
         <categoryLink id="e55e-460f-c3d7-687c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="4af9-72f5-e618-a95f" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
-        <categoryLink targetId="8f42-a824-fb5f-8fea" id="3cb0-be55-794a-3161" primary="false" name="Compulsory Troops:"/>
+        <categoryLink id="3cb0-be55-794a-3161" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="09eb-0791-7539-e3fe" name="Knight Lancer" hidden="false" collective="false" import="true" targetId="8312-7457-e7b6-fd9f" type="selectionEntry">
@@ -100,15 +235,15 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d926-652f-8436-30ce" type="greaterThan"/>
-                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58a7-8821-3cd9-c73" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d926-652f-8436-30ce" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58a7-8821-3cd9-c73" type="greaterThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="add" value="5f7-c0fa-4d3-180c" field="category">
+        <modifier type="add" field="category" value="5f7-c0fa-4d3-180c">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="28d3-4be2-608d-bf8a" shared="true" includeChildSelections="true"/>
+            <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28d3-4be2-608d-bf8a" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -124,15 +259,15 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d926-652f-8436-30ce" type="greaterThan"/>
-                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58a7-8821-3cd9-c73" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d926-652f-8436-30ce" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58a7-8821-3cd9-c73" type="greaterThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="add" value="5f7-c0fa-4d3-180c" field="category">
+        <modifier type="add" field="category" value="5f7-c0fa-4d3-180c">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="28d3-4be2-608d-bf8a" shared="true" includeChildSelections="true"/>
+            <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28d3-4be2-608d-bf8a" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -148,15 +283,15 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d926-652f-8436-30ce" type="greaterThan"/>
-                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58a7-8821-3cd9-c73" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d926-652f-8436-30ce" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58a7-8821-3cd9-c73" type="greaterThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="add" value="5f7-c0fa-4d3-180c" field="category">
+        <modifier type="add" field="category" value="5f7-c0fa-4d3-180c">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="28d3-4be2-608d-bf8a" shared="true" includeChildSelections="true"/>
+            <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28d3-4be2-608d-bf8a" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -172,15 +307,15 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d926-652f-8436-30ce" type="greaterThan"/>
-                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58a7-8821-3cd9-c73" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d926-652f-8436-30ce" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58a7-8821-3cd9-c73" type="greaterThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="add" value="5f7-c0fa-4d3-180c" field="category">
+        <modifier type="add" field="category" value="5f7-c0fa-4d3-180c">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="28d3-4be2-608d-bf8a" shared="true" includeChildSelections="true"/>
+            <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28d3-4be2-608d-bf8a" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -196,15 +331,15 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d926-652f-8436-30ce" type="greaterThan"/>
-                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58a7-8821-3cd9-c73" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d926-652f-8436-30ce" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58a7-8821-3cd9-c73" type="greaterThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="add" value="5f7-c0fa-4d3-180c" field="category">
+        <modifier type="add" field="category" value="5f7-c0fa-4d3-180c">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="28d3-4be2-608d-bf8a" shared="true" includeChildSelections="true"/>
+            <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28d3-4be2-608d-bf8a" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -220,15 +355,15 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d926-652f-8436-30ce" type="greaterThan"/>
-                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58a7-8821-3cd9-c73" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d926-652f-8436-30ce" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58a7-8821-3cd9-c73" type="greaterThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="add" value="5f7-c0fa-4d3-180c" field="category">
+        <modifier type="add" field="category" value="5f7-c0fa-4d3-180c">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="28d3-4be2-608d-bf8a" shared="true" includeChildSelections="true"/>
+            <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28d3-4be2-608d-bf8a" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -244,15 +379,15 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d926-652f-8436-30ce" type="greaterThan"/>
-                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58a7-8821-3cd9-c73" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d926-652f-8436-30ce" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58a7-8821-3cd9-c73" type="greaterThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="add" value="5f7-c0fa-4d3-180c" field="category">
+        <modifier type="add" field="category" value="5f7-c0fa-4d3-180c">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="28d3-4be2-608d-bf8a" shared="true" includeChildSelections="true"/>
+            <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28d3-4be2-608d-bf8a" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -268,15 +403,15 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d926-652f-8436-30ce" type="greaterThan"/>
-                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58a7-8821-3cd9-c73" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d926-652f-8436-30ce" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58a7-8821-3cd9-c73" type="greaterThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="add" value="5f7-c0fa-4d3-180c" field="category">
+        <modifier type="add" field="category" value="5f7-c0fa-4d3-180c">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="28d3-4be2-608d-bf8a" shared="true" includeChildSelections="true"/>
+            <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28d3-4be2-608d-bf8a" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -290,7 +425,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b4c-01f4-f39f-7c55" type="greaterThan"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b4c-01f4-f39f-7c55" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -303,7 +438,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b4c-01f4-f39f-7c55" type="greaterThan"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b4c-01f4-f39f-7c55" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -322,7 +457,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
